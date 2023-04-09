@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="forLabModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ProjectTable">
+    <Key>
+      <PropertyRef Name="indexx" />
+    </Key>
+    <Property Name="indexx" Type="int" Nullable="false" />
+    <Property Name="Number" Type="nchar" MaxLength="20" />
+    <Property Name="Inventory_Number" Type="nchar" MaxLength="20" />
+    <Property Name="Object_Name" Type="nchar" MaxLength="20" />
+    <Property Name="Count" Type="nchar" MaxLength="20" />
+    <Property Name="Price" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nchar" MaxLength="45" />
+    <Property Name="email" Type="nchar" MaxLength="45" />
+    <Property Name="password" Type="nchar" MaxLength="45" />
+    <Property Name="phone" Type="nchar" MaxLength="45" />
+  </EntityType>
+  <EntityContainer Name="forLabModelStoreContainer">
+    <EntitySet Name="ProjectTable" EntityType="Self.ProjectTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

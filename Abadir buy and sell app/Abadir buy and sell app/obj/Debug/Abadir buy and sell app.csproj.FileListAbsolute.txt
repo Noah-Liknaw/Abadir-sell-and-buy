@@ -1,0 +1,18 @@
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\Abadir buy and sell app.exe.config
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\Abadir buy and sell app.exe
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\Abadir buy and sell app.pdb
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\EntityFramework.dll
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\EntityFramework.xml
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.csproj.AssemblyReference.cache
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.csproj.SuggestedBindingRedirects.cache
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir_buy_and_sell_app.Form1.resources
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir_buy_and_sell_app.Properties.Resources.resources
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir_buy_and_sell_app.SignUp.resources
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.csproj.GenerateResource.cache
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.csproj.CoreCompileInputs.cache
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.csproj.CopyComplete
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.exe
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir buy and sell app.pdb
+C:\Users\NOAH\source\repos\Abadir buy and sell app\Abadir buy and sell app\obj\Debug\Abadir_buy_and_sell_app.Login.resources

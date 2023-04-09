@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="forLabModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ProjectTable">
+          <Key>
+            <PropertyRef Name="indexx" />
+          </Key>
+          <Property Name="indexx" Type="int" Nullable="false" />
+          <Property Name="Number" Type="nchar" MaxLength="20" />
+          <Property Name="Inventory_Number" Type="nchar" MaxLength="20" />
+          <Property Name="Object_Name" Type="nchar" MaxLength="20" />
+          <Property Name="Count" Type="nchar" MaxLength="20" />
+          <Property Name="Price" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nchar" MaxLength="45" />
+          <Property Name="email" Type="nchar" MaxLength="45" />
+          <Property Name="password" Type="nchar" MaxLength="45" />
+          <Property Name="phone" Type="nchar" MaxLength="45" />
+        </EntityType>
+        <EntityContainer Name="forLabModelStoreContainer">
+          <EntitySet Name="ProjectTable" EntityType="Self.ProjectTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="forLabModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ProjectTable">
+          <Key>
+            <PropertyRef Name="indexx" />
+          </Key>
+          <Property Name="indexx" Type="Int32" Nullable="false" />
+          <Property Name="Number" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Inventory_Number" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Object_Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Count" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Price" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="forLabEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ProjectTables" EntityType="Self.ProjectTable" />
+          <EntitySet Name="users" EntityType="forLabModel.user" />
+        </EntityContainer>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+          <Property Name="phone" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="forLabModelStoreContainer" CdmEntityContainer="forLabEntities">
+          <EntitySetMapping Name="ProjectTables">
+            <EntityTypeMapping TypeName="forLabModel.ProjectTable">
+              <MappingFragment StoreEntitySet="ProjectTable">
+                <ScalarProperty Name="indexx" ColumnName="indexx" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Inventory_Number" ColumnName="Inventory_Number" />
+                <ScalarProperty Name="Object_Name" ColumnName="Object_Name" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="forLabModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="userID" ColumnName="userID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

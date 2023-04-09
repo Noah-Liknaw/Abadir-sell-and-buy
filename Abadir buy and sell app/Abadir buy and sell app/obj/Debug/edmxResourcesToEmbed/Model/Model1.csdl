@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="forLabModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ProjectTable">
+    <Key>
+      <PropertyRef Name="indexx" />
+    </Key>
+    <Property Name="indexx" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Inventory_Number" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Object_Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Count" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="forLabEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ProjectTables" EntityType="Self.ProjectTable" />
+    <EntitySet Name="users" EntityType="forLabModel.user" />
+  </EntityContainer>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="45" FixedLength="true" Unicode="true" />
+  </EntityType>
+</Schema>

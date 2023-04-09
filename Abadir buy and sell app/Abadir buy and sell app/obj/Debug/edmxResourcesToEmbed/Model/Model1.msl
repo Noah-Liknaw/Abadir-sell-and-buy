@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="forLabModelStoreContainer" CdmEntityContainer="forLabEntities">
+    <EntitySetMapping Name="ProjectTables">
+      <EntityTypeMapping TypeName="forLabModel.ProjectTable">
+        <MappingFragment StoreEntitySet="ProjectTable">
+          <ScalarProperty Name="indexx" ColumnName="indexx" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Inventory_Number" ColumnName="Inventory_Number" />
+          <ScalarProperty Name="Object_Name" ColumnName="Object_Name" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="forLabModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
